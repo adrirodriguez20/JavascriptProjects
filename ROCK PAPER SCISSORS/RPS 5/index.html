@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Caveat&family=Courgette&family=Crafty+Girls&family=Croissant+One&family=Indie+Flower&family=Lumanosimo&family=Miltonian+Tattoo&family=Mulish:ital,wght@1,300&family=Nerko+One&family=Noto+Sans+Thai&family=Nova+Cut&family=Passions+Conflict&family=Sedgwick+Ave+Display&family=Tapestry&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    
+    <header>
+      <h1>Piedra, papel o tijera</h1>
+      <p>Facil y sencillo</p>
+    </header>
+
+    <main>
+      <p class="instrucciones" id="instrucciones">
+        El primero en llegar a 5 puntos gana
+      </p>
+      
+      <div class="marcador">
+        <p class="nombre nombre-jugador">Jugador</p>
+        <p class="nombre nombre-computadora">Computadora</p>
+        <p class="puntos">
+          <span id="puntos-usuario">0</span>
+          <span>-</span>
+          <span id="puntos-computadora">0</span>
+        </p>
+      </div>
+
+      <div class="elegi-tu-arma" id="elegi-tu-arma">
+        <h2>Elegí tu arma para el próximo turno</h2>
+        <div class="armas">
+          <button class="arma" id="piedra💎">💎</button>
+          <button class="arma" id="papel📝">📝</button>
+          <button class="arma" id="tijera✂️">✂️</button>
+        </div>
+      </div>
+      <div class="mensaje disabled" id="mensaje">
+        <p>
+          Usaste <span class="eleccion" id="eleccion-usuario">papel📝</span><br>
+          y la computadora usó <span class="eleccion" id="eleccion-computadora">piedra💎</span>
+        </p>
+        <p id="gana-punto">Ganaste un punto! 👍</p>
+      </div>
+      <button class="btn disabled" id="reiniciar">Reiniciar Juego</button>
+    </main>
+
+
+    <script src="apss.js"></script>
+  </body>
+</html>
